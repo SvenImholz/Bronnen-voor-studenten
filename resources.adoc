@@ -1,0 +1,19 @@
+= Resources voor developers
+
+Dit document houd een lijst met bronnen en andere informatie bij voor studenten waar ze informatie kunnen vinden voor hun vakgebied. 
+
+== Webdevelopment
+
+. https://www.w3schools.com/[W3 Schools]
+. https://developer.mozilla.org/en-US/[Mozilla Developer Network]
+
+== Graphics
+
+=== Fonts
+
+. https://fonts.google.com/[Google Fonts] Veel gebruikte lettertype bibliotheek. Deze lettertypen zijn ook te vinden in alle Google Workspace apps (docs, ect.)
+. https://fontesk.com/license/ofl-gpl/[Fontesk] is een lijst met downloadbare open-source lettertypen. Er zijn ook andere opties te vinden.
+
+=== Icons
+
+. https://iconify.design/[Iconify] is een samenvoegsel van populaire open-source icon packs 
