@@ -17,3 +17,17 @@ Dit document houd een lijst met bronnen en andere informatie bij voor studenten 
 === Icons
 
 . https://iconify.design/[Iconify] is een samenvoegsel van populaire open-source icon packs 
+
+
+== Editors
+
+. Visual Studio code
+. Jetbrains producten (gratis voor studenten)
+
+=== Plugins voor VS code
+
+. HTML CSS Support
+. HTML Boilerplate
+. IntelliSense for CSS class names in HTML
+. HTML Preview
+. CSS Peek
