@@ -31,3 +31,4 @@ Dit document houd een lijst met bronnen en andere informatie bij voor studenten 
 . IntelliSense for CSS class names in HTML
 . HTML Preview
 . CSS Peek
+. Live Server
