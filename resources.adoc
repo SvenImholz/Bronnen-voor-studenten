@@ -2,6 +2,10 @@
 
 Dit document houd een lijst met bronnen en andere informatie bij voor studenten waar ze informatie kunnen vinden voor hun vakgebied. 
 
+== Gratis dingen voor studenten
+
+. https://education.github.com/pack[GitHub Student Developer pack] Super veel gratis dingen voor studenten
+
 == Webdevelopment
 
 . https://www.w3schools.com/[W3 Schools]
