@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oefenopdracht HTML en CSS</title>
+</head>
+
+<body>
+    <main>
+        <!-- Uitleg -->
+        <h1>Html &amp; CSS voorbeeld</h1>
+        <p>Probeer het scherm ook eens groter en kleiner te maken. Dan zal je zien dat de boxjes in het midden ook mee
+            vergroten en verkleinen.</p>
+
+        <!-- Het voorbeeld begint hieronder -->
+        <div class="bg">
+            <div class="outer-grid">
+                <div class="l-box square-grid">
+                    <div class="s-box"></div>
+                    <div class="s-box"></div>
+                    <div class="s-box"></div>
+                    <div class="s-box"></div>
+                </div>
+                <div class="l-box tr-color"></div>
+                <div class="l-box grid-bottom-row">
+                    <div class="s-box"></div>
+                    <div class="s-box"></div>
+                    <div class="s-box"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+<style>
+    /* Deze regel is belangrijk voor het gebruik van padding. Als je wilt weten waarom kan je deze video bekijken: 
+    https://www.youtube.com/watch?v=WlGQdgy-M6w 
+    */
+    * {
+        box-sizing: border-box;
+    }
+
+    html {
+        color-scheme: light dark;
+    }
+
+    main {
+        width: min(65ch, 100% - 4rem);
+    }
+
+    body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: cornsilk;
+        font-family: system-ui;
+        font-size: 1.125rem;
+        line-height: 1.6;
+    }
+
+    .bg {
+        width: 80vmin;
+        height: 80vmin;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        background-color: rgb(198, 164, 120);
+
+    }
+
+    .outer-grid {
+        display: grid;
+        width: 100%;
+        height: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 3vmin;
+    }
+
+    .l-box {
+        background-color: bisque;
+        height: 100%;
+        width: 100%;
+    }
+
+    .s-box {
+        background-color: burlywood;
+        height: 15vmin;
+        width: 15vmin;
+    }
+
+    .grid-bottom-row {
+        grid-column: 1 / span 2;
+        display: flex;
+        align-items: center;
+        gap: 2vmin;
+        padding: 0 3vmin;
+        background-color: rgb(245, 236, 159);
+    }
+
+    .square-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        justify-items: center;
+    }
+
+    .tr-color {
+        background-color: rgb(163, 196, 195);
+    }
+</style>
+
+</html>
