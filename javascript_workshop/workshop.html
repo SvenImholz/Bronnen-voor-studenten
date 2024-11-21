@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Oefeningen</title>
+    <style>
+        body {
+            display: flex;
+            font-family: Arial, sans-serif;
+        }
+        .form-container {
+            width: 50%;
+            padding: 20px;
+            background-color: #f4f4f9;
+            border-right: 2px solid #ddd;
+        }
+        .form-container form {
+            display: flex;
+            flex-direction: column;
+        }
+        .form-container label {
+            margin: 10px 0 5px;
+        }
+        .form-container input,
+        .form-container select,
+        .form-container button {
+            margin-bottom: 15px;
+            padding: 10px;
+            font-size: 1rem;
+        }
+        .content-container {
+            width: 70%;
+            padding: 20px;
+        }
+        .hidden {
+            display: none;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .product-selection {
+            display: flex;
+            flex-direction: column;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 20px;
+            background-color: #f9f9ff;
+        }
+
+        .product-selection h2 {
+            margin-top: 0;
+            color: #333;
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+<!-- Formulier Sectie -->
+<div class="form-container">
+    <h2>Dranken Formulier</h2>
+    <form id="Form">
+        <!-- Opdracht 1: Naam en Geboortedatum -->
+        <label for="name">Naam:</label>
+        <input type="text" id="name" name="name" placeholder="Typ je naam hier">
+
+        <label for="birthdate">Geboortedatum:</label>
+        <input type="date" id="birthdate" name="birthdate">
+
+        <!-- Opdracht 2: Product Selectie -->
+        <div class="product-selection">
+            <h2>Product Selectie</h2>
+            <label for="product">Kies een product:</label>
+            <select id="product">
+                <option value="" disabled selected>Selecteer een product</option>
+            </select>
+
+            <label for="quantity">Hoeveelheid:</label>
+            <input type="number" id="quantity" min="1" placeholder="Aantal">
+
+            <button type="button" id="addToCartBtn">Voeg toe aan winkelwagentje</button>
+        </div>
+
+        <button type="button" id="submitBtn">Verzenden</button>
+    </form>
+</div>
+
+<!-- Resultaten Sectie -->
+<div class="content-container">
+    <!-- Opdracht 1: Naam en Leeftijd -->
+    <h2>Resultaten</h2>
+    <p id="welcomeMessage" class="hidden">Welkom, <span id="welcomeName"></span>!</p>
+    <p id="ageMessage" class="hidden">Je leeftijd is <span id="age"></span>.</p>
+
+    <!-- Opdracht 2: Winkelwagentje -->
+    <h3>Winkelwagentje</h3>
+    <ul id="cart"></ul>
+    <p id="totalPrice" class="hidden">Totaalprijs: €<span id="total"></span></p>
+</div>
+<!-- Link naar het javascript bestand -->
+<script src="script.js"></script>
+</body>
+</html>
